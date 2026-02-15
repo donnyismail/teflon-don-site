@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | Teflon Don LLC</title>
+  <meta name="description" content="Terms of Service for Teflon Don LLC. Review the terms governing web development, SEO, and AI automation services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #08080C;
+      --off-black: #0E0E14;
+      --dark: #16161E;
+      --mid: #22222C;
+      --border: rgba(255,255,255,0.06);
+      --border-h: rgba(255,77,0,0.2);
+      --muted: #4A4A55;
+      --muted-2: #636370;
+      --light: #8E8E9A;
+      --light-2: #B0AFA8;
+      --cream: #D8D5CF;
+      --white: #F0EDE8;
+      --accent: #FF4D00;
+      --accent2: #FF7A33;
+      --accent-soft: rgba(255,77,0,0.06);
+      --accent-mid: rgba(255,77,0,0.10);
+      --accent-glow: rgba(255,77,0,0.18);
+      --heading: 'Space Grotesk', sans-serif;
+      --body: 'Inter', sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--body);background:var(--black);color:var(--cream);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    ::selection{background:var(--accent);color:#fff}
+    ::-webkit-scrollbar{width:4px}
+    ::-webkit-scrollbar-track{background:var(--black)}
+    ::-webkit-scrollbar-thumb{background:var(--mid);border-radius:2px}
+    a{color:var(--accent);text-decoration:none;transition:color 0.2s}
+    a:hover{color:var(--accent2)}
+
+    /* ---- NAV ---- */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:flex;justify-content:space-between;align-items:center;background:rgba(8,8,12,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .logo{font-family:var(--heading);font-weight:700;font-size:1.1rem;letter-spacing:-0.3px;color:var(--white);text-decoration:none}
+    .logo-dot{color:var(--accent)}
+    .nav-r{display:flex;align-items:center;gap:2.5rem}
+    .nav-r a{font-size:0.76rem;color:var(--muted);letter-spacing:0.5px;text-transform:uppercase;font-weight:500;transition:color 0.2s;text-decoration:none}
+    .nav-r a:hover{color:var(--white)}
+    .nav-btn{background:var(--accent)!important;color:#fff!important;padding:0.5rem 1.2rem;border-radius:3px;font-weight:600!important;font-size:0.7rem!important;letter-spacing:1px!important;text-transform:uppercase!important;transition:all 0.3s!important}
+    .nav-btn:hover{box-shadow:0 0 20px var(--accent-glow);transform:translateY(-1px)}
+
+    /* ---- CONTENT ---- */
+    .legal-header{padding:8rem 3rem 3rem;border-bottom:1px solid var(--border);text-align:center}
+    .legal-header h1{font-family:var(--heading);font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);letter-spacing:-1.5px;line-height:1.1;margin-bottom:1rem}
+    .legal-header .updated{font-family:var(--mono);font-size:0.72rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+    .legal-body{max-width:800px;margin:0 auto;padding:4rem 3rem 6rem}
+    .legal-body h2{font-family:var(--heading);font-size:1.4rem;font-weight:700;color:var(--white);letter-spacing:-0.5px;margin-top:3rem;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
+    .legal-body h2:first-child{margin-top:0}
+    .legal-body h3{font-family:var(--heading);font-size:1.05rem;font-weight:600;color:var(--light-2);margin-top:1.5rem;margin-bottom:0.5rem}
+    .legal-body p{font-size:0.92rem;color:var(--cream);line-height:1.85;margin-bottom:1rem}
+    .legal-body ul,.legal-body ol{margin:0.75rem 0 1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem}
+    .legal-body li{font-size:0.88rem;color:var(--cream);line-height:1.75;padding-left:0.25rem}
+    .legal-body li::marker{color:var(--accent)}
+    .legal-body strong{color:var(--white);font-weight:600}
+    .legal-body .highlight{background:var(--accent-soft);border-left:3px solid var(--accent);padding:1.25rem 1.5rem;margin:1.5rem 0;border-radius:0 4px 4px 0}
+    .legal-body .highlight p{margin-bottom:0;color:var(--light-2);font-size:0.88rem}
+    .legal-body .contact-block{background:var(--off-black);border:1px solid var(--border);padding:2rem;margin:2rem 0;border-radius:2px}
+    .legal-body .contact-block p{margin-bottom:0.5rem}
+    .legal-body .contact-block p:last-child{margin-bottom:0}
+    .legal-body table{width:100%;border-collapse:collapse;margin:1.25rem 0;font-size:0.88rem}
+    .legal-body table th{font-family:var(--heading);font-weight:600;color:var(--white);text-align:left;padding:0.75rem 1rem;border-bottom:2px solid var(--accent);font-size:0.82rem;letter-spacing:0.3px;text-transform:uppercase}
+    .legal-body table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);color:var(--cream);vertical-align:top}
+    .legal-body table tr:hover td{background:var(--accent-soft)}
+
+    /* ---- FOOTER ---- */
+    footer{padding:2rem 3rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .ft-left{font-family:var(--heading);font-size:0.85rem;font-weight:600;color:var(--muted)}
+    .ft-left .hl{color:var(--accent)}
+    .ft-right{display:flex;gap:2rem}
+    .ft-right a{font-size:0.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;transition:color 0.2s;text-decoration:none}
+    .ft-right a:hover{color:var(--white)}
+
+    @media(max-width:768px){
+      nav{padding:1rem 1.5rem}
+      .legal-header{padding:6rem 1.5rem 2rem}
+      .legal-body{padding:3rem 1.5rem 4rem}
+      footer{padding:1.5rem;flex-direction:column;text-align:center}
+      .nav-r{display:none}
+      .legal-body table{font-size:0.78rem}
+      .legal-body table th,.legal-body table td{padding:0.5rem 0.6rem}
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">TEFLON<span class="logo-dot">.</span>DON</a>
+  <div class="nav-r">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="index.html#contact" class="nav-btn">Contact</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<div class="legal-header">
+  <h1>Terms of Service</h1>
+  <div class="updated">Last Updated: February 15, 2026</div>
+</div>
+
+<!-- BODY -->
+<div class="legal-body">
+
+  <h2>1. Acceptance of Terms</h2>
+  <p>These Terms of Service ("Terms") constitute a legally binding agreement between you ("Client," "you," or "your") and <strong>Teflon Don LLC</strong> ("Company," "we," "us," or "our"), a Texas limited liability company operating from Houston, Texas. By accessing our website, engaging our services, or executing a Client Services Agreement, you acknowledge that you have read, understood, and agree to be bound by these Terms.</p>
+  <p>If you are entering into these Terms on behalf of a business entity, you represent and warrant that you have the authority to bind that entity to these Terms.</p>
+
+  <h2>2. Service Descriptions</h2>
+  <p>Teflon Don LLC provides the following categories of digital services to local businesses:</p>
+
+  <h3>2.1 Web Development ("Bulletproof Websites")</h3>
+  <p>Custom website design and development, including responsive/mobile-first design, on-page SEO integration, SSL security, contact forms, click-to-call functionality, Google Maps integration, and performance optimization. Websites are built from scratch using clean, standards-compliant code. We do not use pre-built templates or website builders (Wix, Squarespace, etc.) unless specifically requested by the Client.</p>
+
+  <h3>2.2 Search Engine Optimization ("SEO")</h3>
+  <p>Local SEO services including keyword research and targeting, Google Business Profile setup and optimization, technical SEO audits, competitor analysis, on-page optimization, and periodic performance reporting. SEO results are influenced by numerous factors outside our control (search engine algorithm changes, competitor activity, market conditions); therefore, we do not guarantee specific rankings or traffic volumes.</p>
+
+  <h3>2.3 AI Automation</h3>
+  <p>Custom AI-powered tools and automations including chatbots, automated lead follow-up systems, scheduling automation, workflow automation, and custom integrations. AI services are scoped on a per-project basis and may involve third-party AI service providers.</p>
+
+  <h3>2.4 Full Stack Services</h3>
+  <p>Bundled delivery of web development, SEO, and AI automation as an integrated service package.</p>
+
+  <h2>3. Service Tiers and Pricing</h2>
+  <p>Services are offered at the following standard rates, subject to change. Custom projects may be quoted separately.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tier</th>
+        <th>One-Time Fee</th>
+        <th>Year 1 Hosting</th>
+        <th>Hosting After Year 1</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Launch Pad</strong></td>
+        <td>$499</td>
+        <td>Included</td>
+        <td>$15/month</td>
+      </tr>
+      <tr>
+        <td><strong>Revenue Machine</strong></td>
+        <td>$999</td>
+        <td>Included</td>
+        <td>$25/month</td>
+      </tr>
+      <tr>
+        <td><strong>Market Leader</strong></td>
+        <td>$2,499</td>
+        <td>Included</td>
+        <td>$50/month</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>All prices are quoted in U.S. dollars. Custom projects, add-on services, or scope changes beyond the standard tier inclusions may incur additional fees, which will be quoted and agreed upon in writing before work commences.</p>
+
+  <h2>4. Payment Terms</h2>
+
+  <h3>4.1 One-Time Project Fees</h3>
+  <ul>
+    <li>A <strong>50% deposit</strong> is required before work begins on any project</li>
+    <li>The remaining <strong>50% balance</strong> is due upon project completion, prior to the final files being transferred and the site going live</li>
+    <li>For projects exceeding $2,000, a three-part payment schedule may be arranged: 40% deposit, 30% at midpoint milestone, and 30% upon completion</li>
+  </ul>
+
+  <h3>4.2 Recurring Hosting Fees</h3>
+  <ul>
+    <li>Year 1 hosting is included with all tiers at no additional charge</li>
+    <li>After Year 1, monthly hosting fees are billed on the first of each month</li>
+    <li>Hosting payments are due within <strong>7 days</strong> of invoice date</li>
+    <li>A <strong>15-day grace period</strong> applies before services are suspended for non-payment</li>
+  </ul>
+
+  <h3>4.3 Late Payments</h3>
+  <p>Invoices not paid within 30 days of the due date may incur a late fee of <strong>1.5% per month</strong> (18% annually) on the outstanding balance, or the maximum rate permitted by Texas law, whichever is less. We reserve the right to suspend services, including website hosting, for accounts more than 30 days past due.</p>
+
+  <h3>4.4 Accepted Payment Methods</h3>
+  <p>We accept payment via bank transfer (ACH), Zelle, Venmo, PayPal, or other methods agreed upon in writing. Payment processing fees, if any, are the responsibility of the Client.</p>
+
+  <h2>5. Client Ownership of Deliverables</h2>
+  <div class="highlight">
+    <p><strong>You own everything we build for you.</strong> Upon receipt of full payment, all rights, title, and interest in the deliverables &mdash; including source code, design files, written content (unless sourced from third parties), and any custom assets created specifically for your project &mdash; are transferred to you.</p>
+  </div>
+
+  <h3>5.1 What You Own</h3>
+  <ul>
+    <li>All custom HTML, CSS, JavaScript, and other source code written for your project</li>
+    <li>Custom graphic design assets, layouts, and visual elements created for your project</li>
+    <li>Domain name registrations (if registered on your behalf; domain remains your property at all times)</li>
+    <li>Content written specifically for your site (copy, blog posts, descriptions)</li>
+    <li>Any custom AI configurations, chatbot scripts, or automation workflows created for you</li>
+  </ul>
+
+  <h3>5.2 What We Retain</h3>
+  <ul>
+    <li><strong>Portfolio Rights</strong> &mdash; We retain the right to display the work in our portfolio and marketing materials, including screenshots and descriptions, unless you request otherwise in writing</li>
+    <li><strong>General Knowledge</strong> &mdash; We retain general skills, techniques, and know-how developed during the project, provided they do not include your confidential information</li>
+    <li><strong>Third-Party Licenses</strong> &mdash; Open-source libraries, stock images, fonts, or third-party plugins used in your project remain subject to their respective licenses</li>
+  </ul>
+
+  <h3>5.3 Transfer of Files</h3>
+  <p>Upon request (and provided all invoices are current), we will provide complete source files and facilitate transfer to any hosting provider or developer of your choosing. There is no lock-in. We will cooperate fully with any migration.</p>
+
+  <h2>6. Revision Policy</h2>
+
+  <h3>6.1 Included Revisions</h3>
+  <p>All standard service tiers include <strong>two (2) rounds of revisions</strong> during the design and development phase. A "revision round" is defined as a single consolidated set of written feedback or change requests submitted by the Client.</p>
+
+  <h3>6.2 Scope of Revisions</h3>
+  <p>Revisions include reasonable modifications to layout, colors, typography, content placement, imagery, and minor functional adjustments within the originally agreed scope of work. Revisions do <strong>not</strong> include:</p>
+  <ul>
+    <li>Complete redesigns or fundamental changes to the project direction after the initial mockup has been approved</li>
+    <li>Addition of new pages, features, or functionality not included in the original scope</li>
+    <li>Changes resulting from new requirements introduced after the project has begun</li>
+  </ul>
+
+  <h3>6.3 Additional Revisions</h3>
+  <p>Revision requests beyond the two included rounds will be accommodated at a rate of <strong>$75 per additional revision round</strong>, or as otherwise agreed in writing. We will notify you before any additional charges are incurred.</p>
+
+  <h3>6.4 Client Responsiveness</h3>
+  <p>To maintain project timelines, we request that revision feedback be provided within <strong>7 business days</strong> of receiving a deliverable for review. Projects with no Client response for 30 or more consecutive days may be considered abandoned, and the balance will become due in full.</p>
+
+  <h2>7. Hosting Terms</h2>
+
+  <h3>7.1 Hosting Services</h3>
+  <p>We provide managed hosting as part of our service tiers, which includes server maintenance, SSL certificate management, uptime monitoring, security updates, and technical support for hosting-related issues.</p>
+
+  <h3>7.2 Uptime</h3>
+  <p>We target <strong>99.9% uptime</strong> for hosted websites but do not guarantee uninterrupted service. Scheduled maintenance, third-party outages, and force majeure events are excluded from uptime calculations. We will provide reasonable advance notice of scheduled maintenance when possible.</p>
+
+  <h3>7.3 Cancellation of Hosting</h3>
+  <ul>
+    <li>Hosting may be cancelled by either party with <strong>30 days' written notice</strong></li>
+    <li>Upon cancellation, we will provide all site files and cooperate with migration to a new host</li>
+    <li>No cancellation fees or penalties apply</li>
+    <li>Hosting fees are non-refundable for the current billing period once that period has begun</li>
+    <li>If hosting is cancelled, you remain the full owner of your website and all associated files</li>
+  </ul>
+
+  <h3>7.4 Prohibited Use</h3>
+  <p>Hosted websites may not be used for any unlawful purpose, to distribute malware, to host content that infringes third-party intellectual property rights, or for any activity that violates applicable federal, state, or local law. Violation of this section may result in immediate suspension of hosting without prior notice.</p>
+
+  <h2>8. Client Responsibilities</h2>
+  <p>To ensure timely and successful project delivery, the Client agrees to:</p>
+  <ul>
+    <li>Provide all necessary content, images, branding assets, login credentials, and information in a timely manner</li>
+    <li>Respond to communications and revision requests within reasonable timeframes (7 business days recommended)</li>
+    <li>Ensure that all content provided to us is owned by the Client or properly licensed for use</li>
+    <li>Provide accurate and truthful information about their business for inclusion on the website</li>
+    <li>Review and approve deliverables within the agreed timeframes</li>
+    <li>Maintain current payment on all invoices</li>
+  </ul>
+
+  <h2>9. Project Timelines</h2>
+  <p>Standard project timelines are as follows:</p>
+  <ul>
+    <li><strong>Free Audit</strong> &mdash; Delivered within 48 hours of request</li>
+    <li><strong>Free Mockup</strong> &mdash; Delivered within 48 hours of audit approval</li>
+    <li><strong>Website Build + Launch</strong> &mdash; 5-7 business days from mockup approval and receipt of deposit</li>
+    <li><strong>SEO Campaign Setup</strong> &mdash; 7-14 business days from project start</li>
+    <li><strong>AI Automation</strong> &mdash; Timeline varies based on project complexity; estimated in the scope of work</li>
+  </ul>
+  <p>Timelines are estimates and may be affected by Client responsiveness, scope changes, third-party dependencies, or complexity beyond original estimates. We will communicate any anticipated delays promptly.</p>
+
+  <h2>10. Limitation of Liability</h2>
+
+  <h3>10.1 General Limitation</h3>
+  <p>To the maximum extent permitted by applicable law, <strong>Teflon Don LLC's total aggregate liability</strong> arising out of or related to these Terms, any service agreement, or the services provided hereunder shall not exceed the <strong>total amount paid by the Client to Teflon Don LLC during the twelve (12) months immediately preceding the claim</strong>.</p>
+
+  <h3>10.2 Exclusion of Consequential Damages</h3>
+  <p>In no event shall Teflon Don LLC be liable for any <strong>indirect, incidental, special, consequential, or punitive damages</strong>, including but not limited to loss of profits, loss of revenue, loss of business opportunities, loss of data, or loss of goodwill, regardless of the theory of liability (contract, tort, strict liability, or otherwise), even if we have been advised of the possibility of such damages.</p>
+
+  <h3>10.3 No Guarantee of Results</h3>
+  <p>While we employ industry best practices and are confident in the quality of our work, we do not guarantee specific business outcomes, including but not limited to:</p>
+  <ul>
+    <li>Specific search engine rankings or positioning</li>
+    <li>Specific traffic volumes or conversion rates</li>
+    <li>Specific revenue increases or lead generation numbers</li>
+    <li>Continuous availability or error-free operation of websites or AI systems</li>
+  </ul>
+  <p>Marketing statistics and case study figures referenced on our website represent actual past results but are not guarantees of future performance.</p>
+
+  <h3>10.4 Third-Party Services</h3>
+  <p>We are not responsible for the actions, policies, outages, or failures of third-party services, including but not limited to hosting infrastructure providers, domain registrars, Google (search rankings, Google Business Profile, analytics), payment processors, AI service providers, or any other external platforms integrated into your project.</p>
+
+  <h2>11. Indemnification</h2>
+  <p>The Client agrees to indemnify, defend, and hold harmless Teflon Don LLC, its owner, agents, and affiliates from and against any claims, damages, losses, liabilities, and expenses (including reasonable attorneys' fees) arising out of or related to:</p>
+  <ul>
+    <li>Content provided by the Client that infringes upon the intellectual property rights of any third party</li>
+    <li>The Client's misuse of the website, services, or deliverables</li>
+    <li>The Client's violation of any applicable law or regulation</li>
+    <li>Any misrepresentation by the Client regarding their authority to enter into these Terms</li>
+  </ul>
+
+  <h2>12. Dispute Resolution</h2>
+
+  <h3>12.1 Informal Resolution</h3>
+  <p>In the event of any dispute arising from or relating to these Terms or the services provided, the parties agree to first attempt to resolve the dispute informally through good-faith negotiation for a period of <strong>thirty (30) days</strong> following written notice of the dispute.</p>
+
+  <h3>12.2 Mediation</h3>
+  <p>If the dispute cannot be resolved through informal negotiation, the parties agree to submit the dispute to non-binding mediation in <strong>Harris County, Texas</strong>, before a mutually agreed-upon mediator. The costs of mediation shall be shared equally between the parties.</p>
+
+  <h3>12.3 Binding Resolution</h3>
+  <p>If mediation is unsuccessful, either party may pursue the dispute through binding arbitration or litigation in a court of competent jurisdiction in Harris County, Texas. The prevailing party in any arbitration or litigation shall be entitled to recover reasonable attorneys' fees and costs from the non-prevailing party.</p>
+
+  <h3>12.4 Small Claims Exception</h3>
+  <p>Notwithstanding the above, either party may bring an action in small claims court in Harris County, Texas, for disputes within the jurisdictional limits of such court.</p>
+
+  <h2>13. Governing Law</h2>
+  <p>These Terms shall be governed by and construed in accordance with the laws of the <strong>State of Texas</strong>, without regard to its conflict of laws principles. Any legal action or proceeding shall be brought exclusively in the state or federal courts located in <strong>Harris County, Texas</strong>, and the parties consent to the personal jurisdiction of such courts.</p>
+
+  <h2>14. Termination</h2>
+
+  <h3>14.1 Termination by Client</h3>
+  <p>The Client may terminate an ongoing project or hosting arrangement at any time by providing written notice. In the event of project termination:</p>
+  <ul>
+    <li>The deposit is <strong>non-refundable</strong>, as it covers work already performed (audit, mockup, initial development)</li>
+    <li>If more than 50% of the project scope has been completed, the full project fee becomes due</li>
+    <li>All completed work product will be delivered to the Client upon payment of amounts owed</li>
+  </ul>
+
+  <h3>14.2 Termination by Company</h3>
+  <p>We reserve the right to terminate a project or service relationship if:</p>
+  <ul>
+    <li>The Client fails to make payment within 30 days of the due date after written notice</li>
+    <li>The Client becomes unresponsive for 30 or more consecutive days during an active project</li>
+    <li>The Client requests work that is unlawful, unethical, or in violation of these Terms</li>
+    <li>Continuation of the relationship becomes impracticable due to circumstances beyond our reasonable control</li>
+  </ul>
+
+  <h3>14.3 Effect of Termination</h3>
+  <p>Termination does not relieve either party of obligations accrued prior to the effective date of termination, including payment obligations. Sections 5, 10, 11, 12, 13, and 15 shall survive termination of these Terms.</p>
+
+  <h2>15. Confidentiality</h2>
+  <p>Each party agrees to keep confidential any non-public information received from the other party during the course of the engagement, including business strategies, customer data, login credentials, financial information, and proprietary methods. This obligation survives termination of the engagement for a period of <strong>two (2) years</strong>.</p>
+
+  <h2>16. Force Majeure</h2>
+  <p>Neither party shall be liable for any failure or delay in performance due to causes beyond its reasonable control, including but not limited to natural disasters, pandemics, government actions, internet outages, power failures, cyberattacks, or acts of terrorism. The affected party shall promptly notify the other party and make commercially reasonable efforts to resume performance.</p>
+
+  <h2>17. Miscellaneous</h2>
+
+  <h3>17.1 Entire Agreement</h3>
+  <p>These Terms, together with any executed Client Services Agreement, constitute the entire agreement between the parties concerning the subject matter hereof and supersede all prior agreements, understandings, and representations.</p>
+
+  <h3>17.2 Severability</h3>
+  <p>If any provision of these Terms is held to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.</p>
+
+  <h3>17.3 Waiver</h3>
+  <p>The failure of either party to enforce any provision of these Terms shall not constitute a waiver of that provision or any other provision.</p>
+
+  <h3>17.4 Assignment</h3>
+  <p>The Client may not assign these Terms or any rights hereunder without our prior written consent. We may assign these Terms in connection with a merger, acquisition, or sale of all or substantially all of our assets.</p>
+
+  <h3>17.5 Notices</h3>
+  <p>All notices under these Terms shall be in writing and delivered via email to the addresses on file. Notice is deemed given upon confirmed delivery.</p>
+
+  <h2>18. Contact Information</h2>
+  <p>For questions about these Terms of Service, please contact:</p>
+  <div class="contact-block">
+    <p><strong>Teflon Don LLC</strong></p>
+    <p>Houston, Texas</p>
+    <p>Email: <a href="mailto:dismail93@gmail.com">dismail93@gmail.com</a></p>
+    <p>Phone: <a href="tel:+15186989870">(518) 698-9870</a></p>
+  </div>
+
+  <h2>19. Changes to These Terms</h2>
+  <p>We reserve the right to modify these Terms at any time. Updated Terms will be posted on this page with a revised "Last Updated" date. For active clients, material changes will be communicated via email at least <strong>30 days</strong> before taking effect. Continued use of our services after the effective date of any changes constitutes acceptance of the revised Terms.</p>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-left">TEFLON<span class="hl">.</span>DON <span style="font-weight:400;color:var(--muted);font-size:0.68rem;margin-left:0.75rem;">&copy; 2026 Teflon Don LLC</span></div>
+  <div class="ft-right">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

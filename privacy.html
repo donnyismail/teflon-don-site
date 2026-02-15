@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Teflon Don LLC</title>
+  <meta name="description" content="Privacy Policy for Teflon Don LLC. Learn how we collect, use, and protect your personal information.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #08080C;
+      --off-black: #0E0E14;
+      --dark: #16161E;
+      --mid: #22222C;
+      --border: rgba(255,255,255,0.06);
+      --border-h: rgba(255,77,0,0.2);
+      --muted: #4A4A55;
+      --muted-2: #636370;
+      --light: #8E8E9A;
+      --light-2: #B0AFA8;
+      --cream: #D8D5CF;
+      --white: #F0EDE8;
+      --accent: #FF4D00;
+      --accent2: #FF7A33;
+      --accent-soft: rgba(255,77,0,0.06);
+      --accent-mid: rgba(255,77,0,0.10);
+      --accent-glow: rgba(255,77,0,0.18);
+      --heading: 'Space Grotesk', sans-serif;
+      --body: 'Inter', sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--body);background:var(--black);color:var(--cream);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    ::selection{background:var(--accent);color:#fff}
+    ::-webkit-scrollbar{width:4px}
+    ::-webkit-scrollbar-track{background:var(--black)}
+    ::-webkit-scrollbar-thumb{background:var(--mid);border-radius:2px}
+    a{color:var(--accent);text-decoration:none;transition:color 0.2s}
+    a:hover{color:var(--accent2)}
+
+    /* ---- NAV ---- */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:flex;justify-content:space-between;align-items:center;background:rgba(8,8,12,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .logo{font-family:var(--heading);font-weight:700;font-size:1.1rem;letter-spacing:-0.3px;color:var(--white);text-decoration:none}
+    .logo-dot{color:var(--accent)}
+    .nav-r{display:flex;align-items:center;gap:2.5rem}
+    .nav-r a{font-size:0.76rem;color:var(--muted);letter-spacing:0.5px;text-transform:uppercase;font-weight:500;transition:color 0.2s;text-decoration:none}
+    .nav-r a:hover{color:var(--white)}
+    .nav-btn{background:var(--accent)!important;color:#fff!important;padding:0.5rem 1.2rem;border-radius:3px;font-weight:600!important;font-size:0.7rem!important;letter-spacing:1px!important;text-transform:uppercase!important;transition:all 0.3s!important}
+    .nav-btn:hover{box-shadow:0 0 20px var(--accent-glow);transform:translateY(-1px)}
+
+    /* ---- CONTENT ---- */
+    .legal-header{padding:8rem 3rem 3rem;border-bottom:1px solid var(--border);text-align:center}
+    .legal-header h1{font-family:var(--heading);font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);letter-spacing:-1.5px;line-height:1.1;margin-bottom:1rem}
+    .legal-header .updated{font-family:var(--mono);font-size:0.72rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+    .legal-body{max-width:800px;margin:0 auto;padding:4rem 3rem 6rem}
+    .legal-body h2{font-family:var(--heading);font-size:1.4rem;font-weight:700;color:var(--white);letter-spacing:-0.5px;margin-top:3rem;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
+    .legal-body h2:first-child{margin-top:0}
+    .legal-body h3{font-family:var(--heading);font-size:1.05rem;font-weight:600;color:var(--light-2);margin-top:1.5rem;margin-bottom:0.5rem}
+    .legal-body p{font-size:0.92rem;color:var(--cream);line-height:1.85;margin-bottom:1rem}
+    .legal-body ul,.legal-body ol{margin:0.75rem 0 1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem}
+    .legal-body li{font-size:0.88rem;color:var(--cream);line-height:1.75;padding-left:0.25rem}
+    .legal-body li::marker{color:var(--accent)}
+    .legal-body strong{color:var(--white);font-weight:600}
+    .legal-body .highlight{background:var(--accent-soft);border-left:3px solid var(--accent);padding:1.25rem 1.5rem;margin:1.5rem 0;border-radius:0 4px 4px 0}
+    .legal-body .highlight p{margin-bottom:0;color:var(--light-2);font-size:0.88rem}
+    .legal-body .contact-block{background:var(--off-black);border:1px solid var(--border);padding:2rem;margin:2rem 0;border-radius:2px}
+    .legal-body .contact-block p{margin-bottom:0.5rem}
+    .legal-body .contact-block p:last-child{margin-bottom:0}
+    .sec-num{font-family:var(--mono);font-size:0.65rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase;display:block;margin-bottom:0.5rem}
+
+    /* ---- FOOTER ---- */
+    footer{padding:2rem 3rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .ft-left{font-family:var(--heading);font-size:0.85rem;font-weight:600;color:var(--muted)}
+    .ft-left .hl{color:var(--accent)}
+    .ft-right{display:flex;gap:2rem}
+    .ft-right a{font-size:0.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;transition:color 0.2s;text-decoration:none}
+    .ft-right a:hover{color:var(--white)}
+
+    @media(max-width:768px){
+      nav{padding:1rem 1.5rem}
+      .legal-header{padding:6rem 1.5rem 2rem}
+      .legal-body{padding:3rem 1.5rem 4rem}
+      footer{padding:1.5rem;flex-direction:column;text-align:center}
+      .nav-r{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">TEFLON<span class="logo-dot">.</span>DON</a>
+  <div class="nav-r">
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms</a>
+    <a href="index.html#contact" class="nav-btn">Contact</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<div class="legal-header">
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last Updated: February 15, 2026</div>
+</div>
+
+<!-- BODY -->
+<div class="legal-body">
+
+  <h2>1. Introduction</h2>
+  <p>Teflon Don LLC ("we," "us," or "our") operates the website located at teflondon.com (the "Site"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our Site or engage our services. By accessing the Site or submitting information through it, you consent to the practices described in this policy.</p>
+  <p>We are committed to protecting your privacy and handling your personal data with transparency. If you do not agree with the terms of this Privacy Policy, please do not access the Site or submit any personal information.</p>
+
+  <h2>2. Information We Collect</h2>
+
+  <h3>2.1 Information You Provide Directly</h3>
+  <p>When you fill out our contact form or otherwise communicate with us, we may collect the following information:</p>
+  <ul>
+    <li><strong>Name</strong> &mdash; Your first and/or last name</li>
+    <li><strong>Email Address</strong> &mdash; Your email address for correspondence</li>
+    <li><strong>Business Name</strong> &mdash; The name of your business or organization</li>
+    <li><strong>Service Interest</strong> &mdash; The type of service you are inquiring about (e.g., website development, SEO, AI automation)</li>
+    <li><strong>Message Content</strong> &mdash; Any additional details you include in your inquiry</li>
+  </ul>
+
+  <h3>2.2 Information Collected Automatically</h3>
+  <p>When you visit our Site, certain information may be collected automatically through your browser or device, including:</p>
+  <ul>
+    <li><strong>Browser type and version</strong></li>
+    <li><strong>Operating system</strong></li>
+    <li><strong>Referring URL</strong> (the page that linked you to our Site)</li>
+    <li><strong>Pages visited and time spent</strong> on the Site</li>
+    <li><strong>IP address</strong> (which may indicate general geographic location)</li>
+    <li><strong>Device type</strong> (desktop, mobile, tablet)</li>
+  </ul>
+
+  <h3>2.3 Information We Do Not Collect</h3>
+  <p>We do not collect payment card information through our Site. All payment processing, when applicable, is handled through secure third-party payment processors. We do not knowingly collect information from individuals under the age of 18.</p>
+
+  <h2>3. How We Use Your Information</h2>
+  <p>We use the information we collect for the following purposes:</p>
+  <ul>
+    <li><strong>Responding to Inquiries</strong> &mdash; To reply to your contact form submissions, answer questions, and provide information about our services</li>
+    <li><strong>Service Delivery</strong> &mdash; To deliver web development, SEO, AI automation, and related services you have engaged us to perform</li>
+    <li><strong>Communication</strong> &mdash; To send project updates, invoices, and service-related notifications</li>
+    <li><strong>Site Improvement</strong> &mdash; To understand how visitors use our Site so we can improve its functionality and user experience</li>
+    <li><strong>Legal Compliance</strong> &mdash; To comply with applicable laws, regulations, or legal processes</li>
+  </ul>
+  <div class="highlight">
+    <p><strong>We do not sell, rent, or trade your personal information to third parties for marketing purposes.</strong> We will never monetize your data. Your information exists solely to facilitate the services you have requested from us.</p>
+  </div>
+
+  <h2>4. Third-Party Services</h2>
+  <p>Our Site uses or may use the following third-party services that may collect or process data:</p>
+
+  <h3>4.1 Google Fonts</h3>
+  <p>We use Google Fonts to display typography on our Site. When you visit our Site, your browser may connect to Google's servers to download font files. Google may collect your IP address and browser information in connection with this request. Google's privacy policy governs their handling of this data: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
+
+  <h3>4.2 Web Analytics</h3>
+  <p>We may use analytics services (such as Google Analytics or similar tools) to collect anonymized data about Site usage, including page views, traffic sources, and user behavior patterns. This data is aggregated and does not personally identify you. If we implement analytics, you may opt out by adjusting your browser's cookie settings or using browser extensions designed to block analytics tracking.</p>
+
+  <h3>4.3 Hosting Provider</h3>
+  <p>Our Site is hosted by a third-party hosting provider that may collect server logs containing IP addresses, access times, and pages requested. This data is used for security monitoring and maintaining server performance.</p>
+
+  <h3>4.4 Email Services</h3>
+  <p>When you submit the contact form, your inquiry is transmitted via email. We may use third-party email services to manage and respond to communications. These services are bound by their own privacy policies and data protection obligations.</p>
+
+  <h2>5. Cookies and Tracking Technologies</h2>
+  <p>Our Site may use cookies and similar tracking technologies to enhance your browsing experience. Cookies are small text files stored on your device by your browser.</p>
+  <ul>
+    <li><strong>Essential Cookies</strong> &mdash; Necessary for the Site to function properly</li>
+    <li><strong>Analytics Cookies</strong> &mdash; Help us understand how visitors interact with the Site (if analytics are implemented)</li>
+  </ul>
+  <p>You can control cookies through your browser settings. Most browsers allow you to refuse cookies or alert you when cookies are being sent. Disabling cookies may affect certain functionality of the Site.</p>
+
+  <h2>6. Data Retention</h2>
+  <p>We retain your personal information only for as long as necessary to fulfill the purposes described in this Privacy Policy:</p>
+  <ul>
+    <li><strong>Contact Form Submissions</strong> &mdash; Retained for up to <strong>24 months</strong> from the date of submission, unless you become an active client, in which case data is retained for the duration of the business relationship plus 36 months</li>
+    <li><strong>Client Project Data</strong> &mdash; Retained for <strong>36 months</strong> following the completion or termination of services, to allow for potential follow-up, warranty support, or dispute resolution</li>
+    <li><strong>Billing and Financial Records</strong> &mdash; Retained for <strong>7 years</strong> as required by federal and state tax regulations</li>
+    <li><strong>Analytics Data</strong> &mdash; Aggregated and anonymized data may be retained indefinitely for trend analysis</li>
+  </ul>
+  <p>When data is no longer needed for its stated purpose, we will securely delete or anonymize it.</p>
+
+  <h2>7. Data Security</h2>
+  <p>We implement commercially reasonable administrative, technical, and physical security measures to protect the personal information we collect. These measures include:</p>
+  <ul>
+    <li>SSL/TLS encryption for data transmitted through the Site</li>
+    <li>Secure, access-controlled storage for client data</li>
+    <li>Limited access to personal information on a need-to-know basis</li>
+    <li>Regular review of data handling practices</li>
+  </ul>
+  <p>However, no method of electronic transmission or storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security. You transmit personal information at your own risk.</p>
+
+  <h2>8. Your Rights</h2>
+  <p>Depending on your jurisdiction, you may have the following rights regarding your personal information:</p>
+  <ul>
+    <li><strong>Right to Access</strong> &mdash; You may request a copy of the personal data we hold about you</li>
+    <li><strong>Right to Correction</strong> &mdash; You may request that we correct inaccurate or incomplete personal data</li>
+    <li><strong>Right to Deletion</strong> &mdash; You may request that we delete your personal data, subject to legal retention obligations</li>
+    <li><strong>Right to Restrict Processing</strong> &mdash; You may request that we limit how we use your data</li>
+    <li><strong>Right to Data Portability</strong> &mdash; You may request that we provide your data in a structured, commonly used format</li>
+    <li><strong>Right to Opt Out</strong> &mdash; You may opt out of any non-essential data collection, including analytics tracking</li>
+  </ul>
+  <p>To exercise any of these rights, please contact us using the information provided in Section 11 below. We will respond to verified requests within <strong>30 days</strong>. We may require identity verification before processing a request to ensure the security of your information.</p>
+
+  <h2>9. Texas Privacy Considerations</h2>
+  <p>Teflon Don LLC operates from Houston, Texas. While Texas does not currently have a comprehensive consumer privacy law equivalent to the CCPA or GDPR, we are committed to treating all personal data with the same standard of care regardless of your location. If you are a resident of a state with specific privacy laws (such as California, Virginia, Colorado, or Connecticut), we will honor the rights provided to you under those laws upon verified request.</p>
+
+  <h2>10. Children's Privacy</h2>
+  <p>Our Site and services are not directed to individuals under the age of 18. We do not knowingly collect personal information from minors. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately and we will take steps to delete such information.</p>
+
+  <h2>11. Contact Information</h2>
+  <p>For any questions about this Privacy Policy, to submit a data access or deletion request, or to raise any privacy-related concern, please contact us:</p>
+  <div class="contact-block">
+    <p><strong>Teflon Don LLC</strong></p>
+    <p>Houston, Texas</p>
+    <p>Email: <a href="mailto:dismail93@gmail.com">dismail93@gmail.com</a></p>
+    <p>Phone: <a href="tel:+15186989870">(518) 698-9870</a></p>
+  </div>
+  <p>We will acknowledge receipt of your inquiry within <strong>5 business days</strong> and provide a substantive response within <strong>30 days</strong>.</p>
+
+  <h2>12. Changes to This Privacy Policy</h2>
+  <p>We reserve the right to update or modify this Privacy Policy at any time. When we make changes, we will revise the "Last Updated" date at the top of this page. Material changes will be indicated prominently on the Site or communicated directly to active clients. Your continued use of the Site following the posting of changes constitutes acceptance of those changes.</p>
+  <p>We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information.</p>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-left">TEFLON<span class="hl">.</span>DON <span style="font-weight:400;color:var(--muted);font-size:0.68rem;margin-left:0.75rem;">&copy; 2026 Teflon Don LLC</span></div>
+  <div class="ft-right">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
