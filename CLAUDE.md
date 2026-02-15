@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Teflon Don LLC is Donny's solo web dev / SEO / AI automation agency in Houston, TX. This repo contains the main marketing website. Business strategy docs live in a separate private repo (`donnysyntracts/teflon-don-docs`). The site targets local small business owners who need websites, SEO, and AI automation at flat-rate pricing ($499-$2499).
+Teflon Don LLC is Donny's solo web dev / SEO / AI automation agency in Houston, TX. This repo contains the main marketing website. Business strategy docs live in a separate private repo (`donnyismail/teflon-don-docs`). The site targets local small business owners who need websites, SEO, and AI automation at flat-rate pricing ($499-$2499).
 
 ## File Map
 
@@ -25,7 +25,7 @@ Teflon Don LLC is Donny's solo web dev / SEO / AI automation agency in Houston, 
 
 - Site is fully built and functional
 - All Playwright tests passing
-- Deployed via GitHub Pages at `donnysyntracts.github.io/teflon-don-site`
+- Deployed via GitHub Pages at `donnyismail.github.io/teflon-don-site`
 - Repo is **public** (business docs moved to separate private repo `teflon-don-docs`)
 - Contact form uses Formspree (needs form ID registered at formspree.io)
 - Dashboard excluded from production deploy
@@ -76,7 +76,7 @@ Push to `main` -> GitHub Actions auto-deploys to Pages. The workflow selectively
 
 ## Important Notes
 
-- **Business docs** are in the separate private repo `donnysyntracts/teflon-don-docs` - do NOT add them here
+- **Business docs** are in the separate private repo `donnyismail/teflon-don-docs` - do NOT add them here
 - **dashboard.html is internal only** - excluded from the deploy workflow
 - This repo is **public** - never commit secrets, credentials, or business strategy docs here
 - Contact info: (518) 698-9870 / dismail93@gmail.com

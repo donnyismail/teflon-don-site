@@ -1,6 +1,6 @@
 const { test } = require('@playwright/test');
 
-const SITE_URL = 'https://donnysyntracts.github.io/teflon-don-site/';
+const SITE_URL = 'https://donnyismail.github.io/teflon-don-site/';
 
 test('Scroll through site and capture section screenshots', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });

@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-const SITE_URL = 'https://donnysyntracts.github.io/teflon-don-site/';
+const SITE_URL = 'https://donnyismail.github.io/teflon-don-site/';
 
 test.describe('Teflon Don Site - Full Audit', () => {
 
