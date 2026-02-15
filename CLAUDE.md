@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Teflon Don LLC is Donny's solo web dev / SEO / AI automation agency in Houston, TX. This repo contains the main marketing website plus internal business strategy documents. The site targets local small business owners who need websites, SEO, and AI automation at flat-rate pricing ($499-$2499).
+Teflon Don LLC is Donny's solo web dev / SEO / AI automation agency in Houston, TX. This repo contains the main marketing website. Business strategy docs live in a separate private repo (`donnysyntracts/teflon-don-docs`). The site targets local small business owners who need websites, SEO, and AI automation at flat-rate pricing ($499-$2499).
 
 ## File Map
 
@@ -19,14 +19,14 @@ Teflon Don LLC is Donny's solo web dev / SEO / AI automation agency in Houston, 
 | `.github/workflows/deploy.yml` | GitHub Pages deploy on push to main |
 | `tests/site-audit.spec.js` | Full site audit (17 tests) |
 | `tests/scroll-screenshots.spec.js` | Screenshot capture tests |
-| `*.md` (business docs) | Strategy, financial model, sales playbook, etc. |
+| `CLAUDE.md` | This file - AI session context |
 
 ## Current State
 
 - Site is fully built and functional
 - All Playwright tests passing
 - Deployed via GitHub Pages at `donnysyntracts.github.io/teflon-don-site`
-- Repo is **private** (business docs are committed)
+- Repo is **public** (business docs moved to separate private repo `teflon-don-docs`)
 - Contact form uses Formspree (needs form ID registered at formspree.io)
 - Dashboard excluded from production deploy
 - robots.txt and sitemap.xml in place
@@ -36,7 +36,7 @@ Teflon Don LLC is Donny's solo web dev / SEO / AI automation agency in Houston, 
 - **No frameworks** - Pure HTML/CSS/JS, everything inline in single files
 - **Formspree** for form backend (free tier, 50/month)
 - **GitHub Pages** for hosting via Actions workflow
-- **Private repo** to protect business strategy documents
+- **Public site repo** + **private docs repo** (`teflon-don-docs`) to protect business strategy documents
 - **dashboard.html** is internal only, excluded from deploy
 
 ## TODO (Not Yet Done)
@@ -76,8 +76,8 @@ Push to `main` -> GitHub Actions auto-deploys to Pages. The workflow selectively
 
 ## Important Notes
 
-- **DO NOT expose business docs** (STRATEGY.md, FINANCIAL_MODEL.md, etc.) on the public site
+- **Business docs** are in the separate private repo `donnysyntracts/teflon-don-docs` - do NOT add them here
 - **dashboard.html is internal only** - excluded from the deploy workflow
-- The repo is private - keep it that way
+- This repo is **public** - never commit secrets, credentials, or business strategy docs here
 - Contact info: (518) 698-9870 / dismail93@gmail.com
 - Business address: Houston, TX (no physical office listed)

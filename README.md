@@ -32,14 +32,7 @@ teflon-don-site/
 ├── tests/
 │   ├── site-audit.spec.js      # Full site audit tests
 │   └── scroll-screenshots.spec.js  # Screenshot capture tests
-├── AI_BLUEPRINT.md     # AI automation strategy
-├── CLIENT_AGREEMENT.md # Client contract template
-├── CONTENT_STRATEGY.md # Content marketing plan
-├── FINANCIAL_MODEL.md  # Revenue projections
-├── LOCAL_SEO_GUIDE.md  # Local SEO playbook
-├── SALES_PLAYBOOK.md   # Sales process & scripts
-├── STRATEGY.md         # Overall business strategy
-└── TECH_GUIDE.md       # Technical implementation guide
+└── CLAUDE.md           # AI session context file
 ```
 
 ## Local Development
@@ -103,18 +96,7 @@ The contact form submits to [Formspree](https://formspree.io):
 
 ## Business Docs
 
-All strategic/business documents are tracked in this private repo:
-
-| Document | Description |
-|----------|-------------|
-| `STRATEGY.md` | Overall business strategy and positioning |
-| `FINANCIAL_MODEL.md` | Revenue projections and pricing model |
-| `SALES_PLAYBOOK.md` | Sales process, scripts, and objection handling |
-| `CLIENT_AGREEMENT.md` | Client contract template |
-| `AI_BLUEPRINT.md` | AI automation service offerings |
-| `CONTENT_STRATEGY.md` | Content marketing and SEO content plan |
-| `LOCAL_SEO_GUIDE.md` | Local SEO implementation playbook |
-| `TECH_GUIDE.md` | Technical implementation reference |
+Business strategy documents (financial model, sales playbook, client agreements, etc.) are kept in a **separate private repo**: [donnysyntracts/teflon-don-docs](https://github.com/donnysyntracts/teflon-don-docs)
 
 ## Contact
 
