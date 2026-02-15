@@ -1018,7 +1018,9 @@
           </div>
         </address>
       </div>
-      <form class="c-right" id="contactForm" novalidate aria-label="Contact form - Request a free website audit">
+      <form class="c-right" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate aria-label="Contact form - Request a free website audit">
+        <input type="hidden" name="_subject" value="New lead from Teflon Don website">
+        <input type="hidden" name="_next" value="https://donnysyntracts.github.io/teflon-don-site/#contact">
         <div class="fg-row">
           <div class="fg"><label for="contact-name">Name *</label><input type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name" maxlength="100"><span class="error-msg" role="alert">Please enter your name</span></div>
           <div class="fg"><label for="contact-phone">Phone *</label><input type="tel" id="contact-phone" name="phone" placeholder="(555) 123-4567" required autocomplete="tel" maxlength="20"><span class="error-msg" role="alert">Please enter a valid phone number</span></div>
@@ -1323,16 +1325,33 @@
       return;
     }
 
-    var f = new FormData(contactForm);
-    var s = encodeURIComponent('Inquiry from ' + f.get('name') + ' \u2014 Teflon Don');
-    var b = encodeURIComponent('Name: ' + f.get('name') + '\nPhone: ' + f.get('phone') + '\nEmail: ' + (f.get('email') || 'Not provided') + '\nBusiness: ' + (f.get('business') || 'Not provided') + '\nService: ' + f.get('service') + '\nMessage: ' + (f.get('message') || 'No message'));
-    window.location.href = 'mailto:dismail93@gmail.com?subject=' + s + '&body=' + b;
-
     var btn = contactForm.querySelector('.sub-btn');
-    btn.textContent = 'OPENING EMAIL...';
-    btn.style.background = '#4ade80';
+    btn.textContent = 'SENDING...';
     btn.disabled = true;
-    setTimeout(function() { btn.textContent = 'GET MY FREE AUDIT'; btn.style.background = ''; btn.disabled = false; }, 3000);
+
+    var f = new FormData(contactForm);
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: f,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) {
+        btn.textContent = 'SENT!';
+        btn.style.background = '#4ade80';
+        contactForm.reset();
+        setTimeout(function() { btn.textContent = 'GET MY FREE AUDIT'; btn.style.background = ''; btn.disabled = false; }, 3000);
+      } else {
+        btn.textContent = 'ERROR - TRY AGAIN';
+        btn.style.background = '#ef4444';
+        btn.disabled = false;
+        setTimeout(function() { btn.textContent = 'GET MY FREE AUDIT'; btn.style.background = ''; }, 3000);
+      }
+    }).catch(function() {
+      btn.textContent = 'ERROR - TRY AGAIN';
+      btn.style.background = '#ef4444';
+      btn.disabled = false;
+      setTimeout(function() { btn.textContent = 'GET MY FREE AUDIT'; btn.style.background = ''; }, 3000);
+    });
   });
 
   // ---- EXIT FORM HANDLER ----

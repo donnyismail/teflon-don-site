@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard.html
+
+Sitemap: https://donnysyntracts.github.io/teflon-don-site/sitemap.xml
