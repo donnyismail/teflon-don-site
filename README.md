@@ -4,7 +4,7 @@
 
 The marketing site for Teflon Don LLC, Donny's solo web dev / SEO / AI automation agency based in Houston, TX. Built to convert local business owners into clients with flat-rate pricing, fast delivery, and no agency markup.
 
-**Live site:** [donnyismail.github.io/teflon-don-site](https://donnyismail.github.io/teflon-don-site/)
+**Live site:** [teflondon.dev](https://teflondon.dev/)
 
 ## Tech Stack
 
@@ -69,21 +69,13 @@ The site auto-deploys to GitHub Pages on every push to `main`:
 1. Push to `main` branch
 2. GitHub Actions workflow (`.github/workflows/deploy.yml`) triggers
 3. Site files are uploaded (excluding `dashboard.html`, `node_modules`, tests, etc.)
-4. Live at [donnyismail.github.io/teflon-don-site](https://donnyismail.github.io/teflon-don-site/)
+4. Live at [teflondon.dev](https://teflondon.dev/)
 
 **Note:** `dashboard.html` is excluded from deployment - it's for internal use only.
 
-## Domain Setup (Future)
+## Custom Domain
 
-When `teflondon.dev` is purchased:
-
-1. Add domain in GitHub Pages settings (repo > Settings > Pages > Custom domain)
-2. Create DNS records:
-   - `CNAME` record: `teflondon.dev` -> `donnyismail.github.io`
-   - Or `A` records pointing to GitHub's IPs
-3. Enable "Enforce HTTPS" in Pages settings
-4. Update `canonical` URLs and `og:url` meta tags in HTML files
-5. Update `sitemap.xml` and `robots.txt` URLs
+The site is live at [teflondon.dev](https://teflondon.dev/) via Cloudflare DNS pointing to GitHub Pages.
 
 ## Contact Form (Formspree)
 
